@@ -55,7 +55,7 @@ class CEKRequest {
         break;
       case 'Clova.GuideIntent': 
       default: 
-        cekResponse.appendSpeechText("プッシュアップを10回のように指示してください。種目は、プッシュアップ、シットアップ、バックエクステンション、スクワット、クランチ、バックキック、ヒップリフト、レッグレイズ、カーフレイズ、ランジ、チンニングから選んでください。")
+        cekResponse.appendSpeechText("もう一度と指示してください。")
     }
   }
 }
