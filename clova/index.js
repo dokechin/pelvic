@@ -47,7 +47,6 @@ class CEKRequest {
   intentRequest(cekResponse) {
     switch (intent) {
       case 'RepeatIntent':
-        cekResponse.appendSpeechText( type + count + "回")
         cekResponse.appendSpeechText({
           lang: 'ja',
           type: 'URL',
