@@ -112,7 +112,7 @@ class CEKResponse {
   }
 }
 
-const clovaReq = async function (httpReq, httpRes, next) {
+const clovaReq = function (httpReq, httpRes, next) {
   const signature = httpReq.headers.signaturecek
   var cekResponse = new CEKResponse()
   var cekRequest = new CEKRequest(httpReq)
@@ -123,7 +123,7 @@ const clovaReq = async function (httpReq, httpRes, next) {
       return httpRes.status(400).send(e.message)
     }
   }
-  await cekRequest.do(cekResponse)
+  cekRequest.do(cekResponse)
   console.log(`CEKResponse: ${JSON.stringify(cekResponse)}`)
   return httpRes.send(cekResponse)
 };
