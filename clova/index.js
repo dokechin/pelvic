@@ -37,6 +37,7 @@ class CEKRequest {
   }
 
   launchRequest(cekResponse) {
+    cekResponse.appendSpeechText("骨盤底エクササイズ。お尻をしめる動作を１５秒間リラックスして行いましょう。")
     cekResponse.appendSpeechText({
       lang: 'ja',
       type: 'URL',
