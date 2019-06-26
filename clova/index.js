@@ -1,6 +1,6 @@
 const uuid = require('uuid').v4
 const _ = require('lodash')
-const { DOMAIN, ExtensionId, DEBUG ,BOT_ACCESS_TOKEN, DB_PASSWORD} = require('../config')
+const { DOMAIN, ExtensionId, DEBUG } = require('../config')
 var verifier = require('../util/verifier.js')
 const PUBLIC= "./public/clova";
 
