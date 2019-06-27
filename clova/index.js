@@ -40,7 +40,7 @@ class CEKRequest {
     cekResponse.appendSpeechText({
       lang: 'ja',
       type: 'URL',
-      value: `${DOMAIN}/drum-japanese2.mp3`
+      value: `${DOMAIN}/futatsunoviolin.mp3`
     })
     cekResponse.setMultiturn({});
   }
@@ -49,10 +49,11 @@ class CEKRequest {
     const intent = this.request.intent.name
     switch (intent) {
       case 'RepeatIntent':
+        cekResponse.appendSpeechText("もう一度、始めます。")
         cekResponse.appendSpeechText({
           lang: 'ja',
           type: 'URL',
-          value: `${DOMAIN}/info-girl1_info-girl1-youi1.mp3`
+          value: `${DOMAIN}/futatsunoviolin.mp3`
         })
         cekResponse.setMultiturn({}); 
         break;
