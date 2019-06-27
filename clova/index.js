@@ -42,6 +42,7 @@ class CEKRequest {
       type: 'URL',
       value: `${DOMAIN}/drum-japanese2.mp3`
     })
+    cekResponse.setMultiturn({});
   }
   
   intentRequest(cekResponse) {
@@ -51,7 +52,8 @@ class CEKRequest {
           lang: 'ja',
           type: 'URL',
           value: `${DOMAIN}/info-girl1_info-girl1-youi1.mp3`
-        })          
+        })
+        cekResponse.setMultiturn({}); 
         break;
       case 'Clova.GuideIntent': 
       default: 
