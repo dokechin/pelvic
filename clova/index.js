@@ -46,7 +46,7 @@ class CEKRequest {
   }
   
   intentRequest(cekResponse) {
-    const intent = that.request.intent.name
+    const intent = this.request.intent.name
     switch (intent) {
       case 'RepeatIntent':
         cekResponse.appendSpeechText({
